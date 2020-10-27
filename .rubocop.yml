@@ -1,0 +1,40 @@
+require:
+  - rubocop-performance
+
+inherit_from: .rubocop_todo.yml
+
+Style/Documentation:
+  Exclude:
+    - 'spec/**/*'
+    - 'lib/security_roles_client/fake*.rb'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+Performance/AncestorsInclude:
+  Enabled: true
+
+Performance/BigDecimalWithNumericArgument:
+  Enabled: true
+
+Performance/RedundantSortBlock:
+  Enabled: true
+
+Performance/RedundantStringChars:
+  Enabled: true
+
+Performance/ReverseFirst:
+  Enabled: true
+
+Performance/SortReverse:
+  Enabled: true
+
+Performance/Squeeze:
+  Enabled: true
+
+Performance/StringInclude:
+  Enabled: true
+
+Performance/Sum:
+  Enabled: true
